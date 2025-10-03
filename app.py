@@ -15,21 +15,28 @@ def partone():
 
 
 def partTWO():
-    useranswer = int(input("Look up movies from after this year: "))
+    useranswer2 = int(input("Look up movies from after this year: "))
     for i in range(0, len(data)):
         year = data[i]["year"]
-        if year > useranswer:
+        if year > useranswer2:
             print(data[i]["title"])
 
 
 #part three
 def part3():
-    useranswer1 = int(input("Movies after this year: "))
-    useranswer2 = int(input("Movies before this year: "))
+    useranswer3a = int(input("Movies after this year: "))
+    useranswer3b = int(input("Movies before this year: "))
 
     
     for i in range(0, len(data)):
         year = data[i]["year"]
-        if year > useranswer1 and year < useranswer2 :
+        if year > useranswer3a and year < useranswer3b :
             print(data[i]["title"])
-part3()
+#part3()
+
+def part4():
+    useranswer4 = int(input("Movies made "))
+    for i in range(0, len(data)):
+        year = data[i]["year"]
+        if year == useranswer4
+            print(data[i]["title"])
