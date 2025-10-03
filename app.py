@@ -35,8 +35,11 @@ def part3():
 #part3()
 
 def part4():
-    useranswer4 = int(input("Movies made "))
+    useranswer4 = int(input("Movies made during this year: "))
     for i in range(0, len(data)):
         year = data[i]["year"]
-        if year == useranswer4
+        if year == useranswer4:
             print(data[i]["title"])
+
+part4()
+
